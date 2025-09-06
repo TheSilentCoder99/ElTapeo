@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
     text-wrap: balance;
-    max-width: fit-content;
 }
 
 p{
@@ -14,7 +13,7 @@ p{
 h1{
     color: blue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -116,7 +115,7 @@ h3{
     text-align: center;
     font-weight: bold;
     font-style:normal;
-    font-size: 40px;
+    font-size: 2.5em;
     font-style: oblique;
     color: rgb(51, 39, 179);
 }
@@ -173,7 +172,7 @@ justify-content: center;
 .desc-especialidades{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
 }
 
