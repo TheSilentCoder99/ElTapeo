@@ -2,43 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=m, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Tapeo</title>
     <link rel="stylesheet" href="Stylesheet.css">
 </head>
 <body>
     <header>
         <nav>
-        <span class="secciones"><a href="#nosotros"><p class="letra-encabezado">Nosotros</p></a></span>
-        <span class="secciones"><a href="#especialidades"><p class="letra-encabezado">Especialidades</p></a></span>
-        <span class="secciones"><a href="#galeria"><p class="letra-encabezado">Galería</p></a></span>
-        <span class="secciones"><a href="#contacto"><p class="letra-encabezado">Contacto</p></a></span>
+        <a href="#nosotros" class="letra-encabezado" class="secciones">Nosotros</a>
+        <a href="#especialidades" class="letra-encabezado">Especialidades</a>
+        <a href="#galeria"class="letra-encabezado">Galería</a>
+        <a href="#contacto" class="letra-encabezado">Contacto</a>
         </nav>
     </header>
     
     <section class="caja-titulo-subtitulo">
-    <h1 class="titulo">Café Bar El Tapeo</h1>
+    <h1 class="titulo" id="nosotros">Café Bar El Tapeo</h1>
     <h2 class="subtitulo">Tu bar domincano-almeriense en Almería</h2>
     </section>
 <hr>
 <main>
 
 <section class="caja-sobre-nosotros">
-    
      <div class="texto-sobre-nosotros">
-    <h3 class="quienes-somos" id="nosotros">Quiénes somos</h3>
+    <h3 class="quienes-somos">Quiénes somos</h3>
     <p class="parrafo-intro">Somos dominicanos y llevamos nuestra tierra en el corazón, pero también somos parte de esta España que nos ha dado tantas oportunidades. <br> Aquí hemos encontrado un segundo hogar, nuevas costumbres, nuevas amistades… y una nueva forma de compartir lo que somos. Nuestro local nace de ese cruce de culturas: <br> cocinamos con el sazón caribeño que nos acompaña desde siempre, pero también con el gusto por lo español que hemos ido abrazando con el tiempo. Amar lo nuestro no significa cerrar las puertas a lo nuevo, sino todo lo contrario: significa compartirlo. <br> En cada plato que servimos hay una celebración de ambas tierras. Y no solo Dominicana y España, en nuestro local hay un encuentro de todos los países de hispanoamérica con España. <br>
     Dominicana de corazón, española por cariño.</p>
-    </div>
-
-    <div class="caja-imagenes-sobre-nosotros">
-        <img src="Cartel.webp" alt="comida deliciosa" class="fotos-desc">
-    </div>
-    <div class="caja-imagenes-sobre-nosotros">
-        <img src="salón.jpg" alt="salón del local" height="250" width="160" class="fotos-desc">
-    </div>
-    <div class="caja-imagenes-sobre-nosotros">
-        <img src="detalle.jpg" alt="cartel detalle" height="250" width="160" class="fotos-desc">
     </div>
 </section>
 
@@ -46,24 +35,25 @@
     
     <h3 id="especialidades">Nuestras especialidades</h3>
     <p class="presentacion-especialidades">En cada plato llevamos el sabor auténtico de la cocina dominicana: <br> recetas caseras, ingredientes frescos y ese toque criollo que nos hace únicos. <br> Desde el mangú del desayuno hasta el sancocho que reúne a la familia, nuestras especialidades rinden homenaje a las tradiciones y al calor del hogar. <br> Disfruta de los clásicos de siempre: <br> “La bandera” con su combinación de arroz, habichuelas y carne; el picapollo crujiente; <br> o un buen plato de mangú con los famosos “tres golpes”. <br> Cada bocado cuenta una historia de sabor, raíces y cultura caribeña.</p>
+    <hr> <br>
 
   <div class="items">
     <div>
-        <div class="comidas"><img src="Sancocho_web.jpg" alt="sancocho dominicano" height="250" width="250"></div>
+        <div class="comidas"><img src="Sancocho_web.jpg" alt="sancocho típico dominicano"></div>
         <h4>Sanchoco</h4>
         <p class="desc-especialidades">El sancocho es una sopa espesa y sabrosa que se considera uno de los platos más emblemáticos del país. <br>Se prepara con varios tipos de carnes (res, cerdo, pollo, chivo), junto con tubérculos y vegetales.</p>
         
     </div>
 
     <div>
-        <div class="comidas"><img src="magú dominicano.jpg" alt="Mangú dominicano" height="250" width="250"></div>
+        <div class="comidas"><img src="magú dominicano.jpg" alt="Mangú, plato típico de República Dominicana"></div>
         <h4>Mangú</h4>
         <p class="desc-especialidades">El mangú es un plato tradicional dominicano hecho a base de plátanos verdes <br> y luego majados con un poco de agua de cocción y aceite o mantequilla.<br>Suele servirse como desayuno acompañado de los “tres golpes”.</p>
     
     </div>
 
      <div>
-        <div class="comidas"><img src="la-bandera-dominicana.jpg" alt="plato dominicano La bandera" height="250" width="250"></div>
+        <div class="comidas"><img src="la-bandera-dominicana.jpg" alt="plato dominicano La bandera"></div>
         <h4>La Bandera</h4>
         <p class="desc-especialidades">“La bandera” es el almuerzo más típico del dominicano y se llama así porque representa los colores de la bandera nacional. <br>
        Suele acompañarse con aguacate, ensalada verde o fritos maduros. <br>Es un plato simple pero completo, base de la dieta diaria en muchos hogares.</p>
@@ -71,7 +61,7 @@
 
       <div>
         <div class="comidas">
-        <img src="picapollo.webp" alt="picapollo dominicano" height="250" width="250"></div>
+        <img src="picapollo.webp" alt="picapollo dominicano"></div>
         <h4>Picapollo</h4>
         <p class="desc-especialidades">Es la versión dominicana del pollo frito. <br>Se trata de trozos de pollo sazonados intensamente (con ajo, orégano, sal, etc.) <br> que luego se empanan y se fríen hasta quedar bien crujientes. Es muy popular como comida rápida o callejera.</p>
   

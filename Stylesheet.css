@@ -3,12 +3,12 @@ html{
     text-wrap: balance;
 }
 
-* {
+:root {
     box-sizing: border-box;
 }
 
 p{
-    margin: 10px;
+    margin: 1rem;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -44,7 +44,8 @@ a{
 /* El header en sí no tiene contenido, es como una caja vacía en la que va el nav */
 
 header{
-    height: 15px;
+    height: 0.5rem;
+    
 
 }
 
@@ -52,44 +53,35 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     background-color:black;
-    width:100%;
     position: fixed;
-    height: 40px;
+    height: 2.5rem;
 }
 
 
 .caja-titulo-subtitulo{
 
     background-color: black;
-    height:150px;
     text-transform: uppercase;
-    margin-top:25.3px;
+    width:100%;
+    max-width: 100%;
 
 }
 
 .titulo,.subtitulo{
     color: white;
+    
 }
 
-.secciones{
-    font-weight:bold;
-    font-style: oblique;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .letra-encabezado{
     color:aqua;
     margin: 5px;
     font-size: 14px;
-}
-
-.caja-imagenes-sobre-nosotros{
-    display: flex;
-    max-width: 150px;
-    height: 250px;
-    margin: 30px;
+    font-weight:bold;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .quienes-somos{
@@ -98,9 +90,8 @@ nav{
 }
 
 .fotos-desc{
-    padding-top: 120px;
-    height:250px;
-    width:160px;
+    max-width: 100%;
+    height:auto;
 }
 
 .fotos-desc:hover{
@@ -152,17 +143,26 @@ color: white;
 
 .items {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
 .comidas{
 display: flex;
 justify-content: center;
+width: 100%;
+height: auto;
+max-width: 100%;
+
 }
 
 .comidas img{
     border-radius: 50%;
+    width: 35%;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .comidas:hover{
@@ -260,3 +260,4 @@ margin: auto;
 .footer{
     background-color: aqua;
 }
+
