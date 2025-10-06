@@ -1,13 +1,9 @@
 html{
-    scroll-behavior: smooth;
-    text-wrap: balance;
+    scroll-behavior:smooth;
     min-width: 100vh;
     min-height: 100vh;
     padding-left: 5rem;
     padding-right: 5rem;
-}
-
-:root {
     box-sizing: border-box;
 }
 
@@ -46,22 +42,16 @@ a{
     color: white;
 }
 
-/* El header en sí no tiene contenido, es como una caja vacía en la que va el nav */
+/* El header en sí no tiene contenido, es como una caja vacía en la que va el nav
+El nav es lo que va dentro del header. Es decir, las letras, el color, la disposición... Todo lo que ves aquí abajo.*/
 
-header{
-   height:1rem;
-    
+.caja-header{
+    background-color: black;
+    color: black;
 }
-
-/* El nav es lo que va dentro del header. Es decir, las letras, el color, la disposición... Todo lo que ves aquí abajo.*/
-
 nav{
-    display: flex;
-    background-color:black;
-    justify-content: space-evenly;
-    position:fixed;
-    height: 2.35rem;
-    width: 89.5%;
+   display: flex;
+   justify-content: space-around;
 }
 
 .caja-titulo-subtitulo{
@@ -78,9 +68,8 @@ nav{
     
 }
 
-
 .letra-encabezado{
-    color:aqua;
+    color:white;
     margin: 5px;
     font-size: 14px;
     font-weight:bold;
@@ -264,5 +253,6 @@ margin: auto;
 
 .footer{
     background-color: aqua;
+    height: 100%;
 }
 
