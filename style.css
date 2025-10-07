@@ -256,3 +256,217 @@ margin: auto;
     height: 100%;
 }
 
+/*MEDIA QUERIES GENERADOS POR CLAUDE*/
+
+/* ============================================
+   MEDIA QUERIES PARA RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablets grandes y pantallas medianas (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+    html {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets (hasta 768px) */
+@media screen and (max-width: 768px) {
+    html {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    /* Navegación vertical */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    
+    .letra-encabezado {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+    
+    /* Especialidades en una columna */
+    .items {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .items > div {
+        width: 100%;
+    }
+    
+    .comidas img {
+        width: 50%;
+    }
+    
+    /* Galería en 2 columnas */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    /* Mapa más pequeño */
+    .mapa-bar iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+    /* Contacto en columna */
+    .info-contacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    
+    .encabezado-contacto {
+        font-size: 1.5em;
+    }
+}
+
+/* Móviles (hasta 480px) */
+@media screen and (max-width: 480px) {
+    html {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    .letra-encabezado {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 1em;
+        margin: 0.5rem;
+    }
+    
+    .parrafo-intro {
+        font-size: 0.9em;
+    }
+    
+    /* Sección de platos */
+    .seccion-platos {
+        padding: 2rem 1rem;
+    }
+    
+    .presentacion-especialidades {
+        font-size: 0.9em;
+        margin: 0px 5px 30px 0px;
+    }
+    
+    .items h4 {
+        font-size: 1.5em;
+    }
+    
+    .desc-especialidades {
+        font-size: 0.85em;
+    }
+    
+    .comidas img {
+        width: 60%;
+    }
+    
+    /* Galería en 1 columna */
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    /* Mapa aún más pequeño */
+    .mapa-bar iframe {
+        width: 100%;
+        height: 250px;
+    }
+    
+    /* Tabla de horarios */
+    table {
+        font-size: 0.7em;
+    }
+    
+    th, td {
+        padding: 4px 2px;
+    }
+    
+    .parrafo-contacto {
+        font-size: 0.9em;
+    }
+    
+    .encabezado-contacto {
+        font-size: 1.3em;
+    }
+    
+    /* Reducir efectos hover en móvil */
+    .comidas:hover {
+        transform: scale(1.05);
+    }
+    
+    .grid-item:hover {
+        transform: scale(1.02);
+    }
+}
+
+/* Móviles muy pequeños (hasta 320px) */
+@media screen and (max-width: 320px) {
+    html {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.1em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    .comidas img {
+        width: 70%;
+    }
+    
+    table {
+        font-size: 0.6em;
+    }
+    
+    .mapa-bar iframe {
+        height: 200px;
+    }
+}
