@@ -258,7 +258,7 @@ margin: auto;
 /* Podrías manipular cada item individualmente si le das una clase (video Yoelvis Mulen - Galería de imágenes, minuto 10:00) */
 
 .footer{
-    background-color: aqua;
+    background-color: lightcyan;
     height: 100%;
 }
 
@@ -270,13 +270,22 @@ margin: auto;
     
 }
 
+.boton-texto-arriba{
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: white; /* opcional */
+    border: 2px solid black; /* opcional */
+    cursor: pointer;
+}
+
 .boton-texto-arriba a{
     color: black;
 }
 
 .boton-texto-arriba:hover{
-    transition: calc(0.2s);
+    transition:0.2s;
     transform: scale(1.5);
+    text-decoration: none;
 }
 
 /*MEDIA QUERIES GENERADOS POR CLAUDE*/
@@ -484,12 +493,32 @@ margin: auto;
     .comidas img {
         width: 70%;
     }
-    
-    table {
-        font-size: 0.6em;
-    }
+
     
     .mapa-bar iframe {
         height: 200px;
     }
+}
+
+
+.tabla-horario{
+    border: 0.3rem double white;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+
+}
+
+.tabla-horario:hover{
+
+    background-color: lightcyan;
+    color: black;
+    border-color: black;
+    
+}
+
+#cerrado{
+    color: red;
+    font-weight: bold;
 }
