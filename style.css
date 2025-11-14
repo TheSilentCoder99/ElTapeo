@@ -175,7 +175,7 @@ max-width: 100%;
 .desc-especialidades{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -288,13 +288,13 @@ margin: auto;
     text-decoration: none;
 }
 
-/*MEDIA QUERIES GENERADOS POR CLAUDE*/
-
 /* ============================================
    MEDIA QUERIES PARA RESPONSIVE DESIGN
    ============================================ */
 
-/* Tablets grandes y pantallas medianas (hasta 1024px) */
+   /* =========================================================
+   Tablets grandes y pantallas medianas (hasta 1024px)
+   ========================================================= */
 @media screen and (max-width: 1024px) {
     html {
         padding-left: 3rem;
@@ -308,9 +308,26 @@ margin: auto;
     .items {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Carrusel - 1024px */
+    .carrousel-container {
+        width: 85%;
+    }
+
+    .carrousel img {
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    .prev, .next {
+        font-size: 20px;
+        padding: 8px;
+    }
 }
 
-/* Tablets (hasta 768px) */
+/* =========================================================
+   Tablets (hasta 768px)
+   ========================================================= */
 @media screen and (max-width: 768px) {
     html {
         padding-left: 2rem;
@@ -379,9 +396,27 @@ margin: auto;
     .encabezado-contacto {
         font-size: 1.5em;
     }
+
+    /* Carrusel - tablets 768px */
+    .carrousel-container {
+        width: 90%;
+    }
+
+    .carrousel img {
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 8px;
+        background: rgba(0,0,0,0.4);
+    }
 }
 
-/* Móviles (hasta 480px) */
+/* =========================================================
+   Móviles (hasta 480px)
+   ========================================================= */
 @media screen and (max-width: 480px) {
     html {
         padding-left: 1rem;
@@ -473,9 +508,30 @@ margin: auto;
     .grid-item:hover {
         transform: scale(1.02);
     }
+
+    /* Carrusel - móviles 480px */
+    .carrousel-container {
+        width: 100%;
+    }
+
+    .carrousel img {
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 5px;
+        background: rgba(0,0,0,0.3);
+    }
+
+    .prev { left: 5px; }
+    .next { right: 5px; }
 }
 
-/* Móviles muy pequeños (hasta 320px) */
+/* =========================================================
+   Móviles muy pequeños (hasta 320px)
+   ========================================================= */
 @media screen and (max-width: 320px) {
     html {
         padding-left: 0.5rem;
@@ -494,12 +550,22 @@ margin: auto;
         width: 70%;
     }
 
-    
     .mapa-bar iframe {
         height: 200px;
     }
+
+    /* Carrusel - móviles muy pequeños 320px */
+    .carrousel img {
+        max-height: 150px;
+    }
+
+    .prev, .next {
+        font-size: 14px;
+        padding: 4px;
+    }
 }
 
+/* FIN DE LAS MEDIA QUERIES */
 
 .tabla-horario{
     border: 0.3rem double white;
@@ -521,4 +587,64 @@ margin: auto;
 #cerrado{
     color: red;
     font-weight: bold;
+}
+
+
+.container-carroussel {
+    width: 80%;       /* reduce el ancho total */
+    margin: 0 auto;   /* centra el carrusel */
+    overflow: hidden;
+    position: relative;
+}
+
+.carroussel{
+    position: relative;
+    width: 100%;
+    transition: transform 0.7s ease;
+    display: flex;
+
+}
+
+.carroussel img {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    flex: 0 0 100%;
+    object-fit:contain;    /* o el alto que quieras */
+    border-radius: 25%;
+    filter:brightness(105%) saturate(110%);
+    display:block;
+}
+/* Esto de los porcentajes relativos es una mierda así que aquí tienes una regla para saber cuánto mide cada foto según el número de fotos que tenga tu div contenedor de imagenes: 
+
+Ancho de cada foto = 100% ÷ número de fotos 
+*/
+
+
+.flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(34, 30, 30, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.flecha-izquierda:hover{
+    background-color: black;
+}
+
+.flecha-derecha:hover{
+    background-color: black;
+}
+
+.flecha-izquierda { left: 10px; }
+.flecha-derecha { right: 10px; }
+
+.fotosEjemplo{
+    filter:brightness(105%) saturate(110%);
 }
