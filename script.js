@@ -23,3 +23,10 @@
   izquierda.addEventListener('click', () => MostrarFotos(index - 1));
 
   derecha.addEventListener('click', () => MostrarFotos(index + 1));
+
+  function cerrarModal() {
+  const modal = document.getElementById('avisoModal');
+  modal.style.display = 'none';
+}
+
+
