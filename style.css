@@ -71,6 +71,14 @@ h1{
   to { opacity: 1; }
 }
 
+/* Ajustes específicos para móviles muy pequeños */
+@media (max-width: 480px) {
+  .modal-contenido {
+    margin: 20% 5%; /* Más espacio arriba y a los lados */
+    font-size: 14px; /* Ajusta tamaño de texto */
+    padding: 15px 20px;
+  }
+}
 
 h2{
     color: black;
