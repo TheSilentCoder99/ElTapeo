@@ -7,6 +7,9 @@ html{
     box-sizing: border-box;
 }
 
+#enlace{
+color: blue;
+}
 
 p{
     margin: 1rem;
@@ -353,6 +356,10 @@ margin: auto;
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
+    #enlace{
+color: blue;
+}
     
     h1 {
         font-size: 1.8em;
@@ -386,6 +393,10 @@ margin: auto;
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    #enlace{
+color: blue;
+}
     
     /* Navegación vertical */
     nav {
@@ -475,6 +486,10 @@ margin: auto;
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    #enlace{
+color: blue;
+}
     
     h1 {
         font-size: 1.3em;
@@ -590,6 +605,10 @@ margin: auto;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+
+    #enlace{
+color: blue;
+}
     
     h1 {
         font-size: 1.1em;
